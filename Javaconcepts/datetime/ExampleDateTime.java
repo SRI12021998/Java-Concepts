@@ -30,7 +30,7 @@ public class ExampleDateTime
 		for(int i=1;i<=12;i++)
 		{
 		LocalDateTime temp=LocalDateTime.of(1998, i, 14, 20, 30);
-		System.out.println(temp.format(newFormat));
+		System.out.println(temp.format(newFormat).toUpperCase());
 		}
 	}
 
