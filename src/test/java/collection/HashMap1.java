@@ -1,5 +1,6 @@
 package collection;
 import java.util.HashMap;
+import java.util.Map.Entry;
 public class HashMap1 
 {
 
@@ -19,13 +20,17 @@ public class HashMap1
 		System.out.println(map.values());
 		System.out.println(map.keySet());
 		
-		HashMap map2=new HashMap();
+		HashMap  <Integer, String>map2=new HashMap<>();
 		map2.put(1, "Sriram");
 		map2.putAll(map);
 		map.clear();
 		System.out.println(map);
 		System.out.println(map2);
-		map.entrySet();
+		
+		for (Entry<Integer,String> entrySet : map2.entrySet()) 
+		{
+			System.out.println(entrySet.getKey()+" "+entrySet.getValue());
+		}
 	}
 
 }
