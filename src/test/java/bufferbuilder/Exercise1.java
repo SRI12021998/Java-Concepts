@@ -10,10 +10,10 @@ public class Exercise1
 	public static void main(String[] args) 
 	{
 		String s []= {"SRI","RAM","DIVYA","PRIYA"};
-		Exercise1.joinNames(s);
-		Exercise1.joinNamesUsingBuffer(s);
-		Exercise1.insertChar("i",2);
-		Exercise1.replaceChar(1,2,"S");
+		joinNames(s);
+		joinNamesUsingBuffer(s);
+		insertChar("i",2);
+		replaceChar(1,2,"S");
 		StringBuilder sb1=new StringBuilder("balaji");
 		System.out.println(sb1.reverse());
 	}

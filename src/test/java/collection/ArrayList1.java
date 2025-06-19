@@ -2,7 +2,9 @@ package collection;
 import java.util.ArrayList;
 public class ArrayList1
 {
-
+/*
+ * add, addall, remove, set, clear
+ */
 	public static void main(String[] args) 
 	{
 		ArrayList names=new ArrayList();
@@ -18,11 +20,12 @@ public class ArrayList1
 		System.out.println(names.contains("Sriram"));
 		System.out.println(names.size());
 		names.remove("Sriram");
+		names.remove(1);
 		System.out.println(names);
 		names.clear();
 		System.out.println(names);
 		System.out.println(names2);
-
+		names2.forEach( name -> System.out.println(name));
 	}
 	
 

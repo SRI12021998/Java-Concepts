@@ -36,11 +36,11 @@ public class ArraysExample implements Comparator
 	public int compare(Object o1, Object o2) 
 	{
 		String s1=(String) o1;//type casting
-		String s2=o2.toString();
+		String s2=String.valueOf(o2);//o2.toString();
 		if(s1.length()>s2.length())
-			return -1;//Ascending with length change positive for descending
+			return 1;//Ascending with length if need change negative for descending
 		else if (s1.length()<s2.length())
-			return 1;//Ascending with length change negative for ascending
+			return -1;//Ascending with length if need change positive for descending
 		else
 			return 0;
 	}
