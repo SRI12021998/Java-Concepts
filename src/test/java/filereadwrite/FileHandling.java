@@ -9,7 +9,7 @@ public class FileHandling
 	public static void main(String[] args) 
 	{
 		FileHandling fh = new FileHandling();
-		fh.copyTextFromOtherFile("D:\\\\1.txt","D:\\2.txt");
+		fh.listTextFiles();
 	}
 	
 	public void textFileCreation()
@@ -43,7 +43,7 @@ public class FileHandling
 	
 	public void textFileDeletion()
 	{
-		File f=new File("D:\\shrideev.txt");
+		File f=new File("D:/shrideev.txt");
 		boolean present=f.exists();
 		if (present==true)
 		{
@@ -311,7 +311,7 @@ public class FileHandling
 		}
 		catch (Exception e)
 		{
-			e.fillInStackTrace();
+			e.printStackTrace();
 		}
 	}
 	

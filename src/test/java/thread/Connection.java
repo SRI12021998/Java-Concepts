@@ -9,9 +9,9 @@ public class Connection
 		try 
 		{
 			wait();
-		} catch (InterruptedException e) 
+		} 
+		catch (InterruptedException e) 
 		{
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		System.out.println("Connected");
@@ -21,7 +21,6 @@ public class Connection
 		} 
 		catch (InterruptedException e) 
 		{
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		System.out.println("File downloaded succesfully");

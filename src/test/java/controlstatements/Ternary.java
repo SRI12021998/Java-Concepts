@@ -11,6 +11,8 @@ public class Ternary
 		System.out.println(t);
 		String p=(a.equals(".txt"))?"ama":"ila";
 		System.out.println(p);
+		int b=(a.equals(".tbxt"))?1:0;
+		System.out.println(b);
 	}
 
 }

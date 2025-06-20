@@ -5,7 +5,7 @@ public class ThreadDemo1 implements Runnable
 
 	public static void main(String[] args) 
 	{
-		ThreadDemo1 d1=new ThreadDemo1();
+		Runnable d1=new ThreadDemo1();//dynamic binding
 		Thread t1=new Thread(d1);
 		t1.start();
 	}

@@ -1,4 +1,4 @@
-package collection;
+package comparator;
 
 import java.util.Arrays;
 
@@ -13,6 +13,7 @@ public class ArraysExample4
 		{
 			System.out.print(output+" ");
 		}
+		
 		Arrays.sort(names, (s1,s2)->s1.length()-s2.length());//change s1 s2 for descending
 		System.out.println();
 		System.out.println("After sorting");

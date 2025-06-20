@@ -5,7 +5,7 @@ public class Exercise1
 /*string buffer & builder are mutable 
  * buffer & builder are same buffer came in v1 builder came in v5
  * buffer is thread safe & all methods are synchronized-sequential actions
- * builder is not thread safe & all methods are synchronized-parallel actions
+ * builder is not thread safe & all methods are non synchronized-parallel actions
  */
 	public static void main(String[] args) 
 	{

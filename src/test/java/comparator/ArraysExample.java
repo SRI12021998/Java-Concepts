@@ -1,4 +1,4 @@
-package collection;
+package comparator;
 
 import java.util.Arrays;
 import java.util.Comparator;
@@ -11,12 +11,14 @@ public class ArraysExample implements Comparator
 		int[]arr= {1,3,61,254,75,12,4,6,7};
 		int[]arr1= {1,3,61,254,75,12,4,9,7};
 		System.out.println(Arrays.equals(arr, arr1));//only checks the same elements are there or not
+		
 		Arrays.sort(arr);//sorts in ascending
 		for(int result:arr)
 		{
 			System.out.print(result+" ");
 		}
 		System.out.println();
+
 		Comparator ae=new ArraysExample();
 		String[]names= {"SriRam","Divya Priya","Shrideev krishna", "Balaji","Balu","Punitha","Suguntha"};
 		System.out.println("Before sorting");
@@ -24,6 +26,7 @@ public class ArraysExample implements Comparator
 		{
 			System.out.print(output+" ");
 		}
+		
 		Arrays.sort(names, ae);
 		System.out.println();
 		System.out.println("After sorting");
