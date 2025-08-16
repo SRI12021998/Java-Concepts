@@ -8,6 +8,9 @@ public class Divya extends Balu
 		Balu b=new Divya();//up-casting
 		System.out.println(b.age);
 		b.exercise(); //overriden method in child class will be considered
+		Divya d=(Divya)b; //down-casting
+		d.work(); //method from child class
+		System.out.println(d.age); //accessing child class variable
 	}
 	public void exercise()
 	{

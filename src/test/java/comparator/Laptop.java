@@ -44,7 +44,7 @@ public class Laptop
         Collections.sort( laptopList, new ComparatorDemo());
 
         // Display sorted laptops
-        System.out.println("");
+        System.out.println();
         System.out.println("Sorted Laptops:");
         for (Laptop laptop : laptopList) 
         {

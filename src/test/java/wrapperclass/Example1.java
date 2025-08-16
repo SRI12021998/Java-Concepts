@@ -25,6 +25,11 @@ public class Example1
 		
 		Integer i2=null;//can store null values
 		System.out.println(i2);
+
+		Integer i3=new Integer(8);
+		System.out.println(i3);
+		int i4=i3;//unboxing or i3.intValue();
+		System.out.println(i4);
 	}
 
 }

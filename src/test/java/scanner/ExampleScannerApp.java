@@ -8,8 +8,8 @@ public class ExampleScannerApp {
         Scanner scn = new Scanner(System.in);
         try {
             System.out.println("Enter name:");
-            String name = scn.next();
-            
+            String name = scn.next();// Using next() to read a single word
+            // If you want to read a full line, use nextLine() instead
             System.out.println("Enter age:");
             int age = scn.nextInt();
             
