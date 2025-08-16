@@ -13,8 +13,8 @@ public class ArraListDemo2
         animal.add("cat");
         animal.add("horse");
         animal.add("goat");
-
-        // Collections.sort(animal,(s1,s2)->s1.compareTo(s2));
+        animal.add("elephant");
+        Collections.sort(animal,(s1,s2)->s2.compareTo(s1));
         System.out.println(animal);
         
         //   Collections.sort(animal,new Comparator()
