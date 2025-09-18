@@ -3,7 +3,10 @@ package inheritance;
 public class Balaji extends Muthaiah//single level inheritance
 {
 	int salary=150000;
-	
+	Balaji()
+	{
+		System.out.println("Balaji constructor");
+	}
 	public static void main(String[] args) 
 	{
 		Balaji b=new Balaji();

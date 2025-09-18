@@ -8,6 +8,7 @@ public class Example2
 	{
 		this.name=name;
 	}
+	@Override
 	public String toString()//changing the return value by overriding
 	{
 		return name;

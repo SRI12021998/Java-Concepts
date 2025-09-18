@@ -31,34 +31,20 @@ public class MovingOddEven
 		int a=0;
 		int b=input.length-1;
 		int []output=new int[input.length];
-		for(int i=0;i<output.length;i++)
-		{
-			int j=i+1;
-			for(int k=0;k<output.length;k++)
-			{
-				if(j<output.length&&output[i]>output[j])
-					{
-						int temp=output[j];
-						output[j]=output[i];
-						output[i]=temp;
-					}
-				j++;
-			}
-		}
-		for (int i=0;i<output.length;i++)
-		{
-			if(input[i]%2==0)//even
-				{
-					output[b]=input[i];
-					b--;
-				}
-			else if(input[i]%2!=0)//odd
-				{
-					output[a]=input[i];
-					a++;
-				}
-		}
-		a=0;
+		// for (int i=0;i<output.length;i++)
+		// {
+		// 	if(input[i]%2==0)//even
+		// 		{
+		// 			output[b]=input[i];
+		// 			b--;
+		// 		}
+		// 	else if(input[i]%2!=0)//odd
+		// 		{
+		// 			output[a]=input[i];
+		// 			a++;
+		// 		}
+		// }
+
 		ArrayList<Integer> even=new ArrayList<>();
 		ArrayList<Integer> odd=new ArrayList<>();
 		for(int z=0;z<output.length;z++)

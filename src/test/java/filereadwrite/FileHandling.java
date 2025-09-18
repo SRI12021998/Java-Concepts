@@ -8,11 +8,10 @@ public class FileHandling
 
 	public static void main(String[] args) 
 	{
-		FileHandling fh = new FileHandling();
-		fh.listTextFiles();
+		copyTextFromOtherFile("D:\\Downloads\\shrideev.json", "D:\\Downloads\\krishna.json");
 	}
 	
-	public void textFileCreation()
+	public static void textFileCreation()
 	{
 		File f=new File("D:\\shrideev.txt");
 		boolean present=f.exists();
@@ -41,7 +40,7 @@ public class FileHandling
 		}
 	}
 	
-	public void textFileDeletion()
+	public static void textFileDeletion()
 	{
 		File f=new File("D:/shrideev.txt");
 		boolean present=f.exists();
@@ -70,7 +69,7 @@ public class FileHandling
 		
 	}
 	
-	public void xlsxFileCreation()
+	public static void xlsxFileCreation()
 		{
 			File f=new File("D:\\shrideev.xlsx");
 			try
@@ -94,7 +93,7 @@ public class FileHandling
 			}
 		}
 		
-	public void xlsxFileDeletion()
+	public static void xlsxFileDeletion()
 		{
 			File f=new File("D:\\shrideev.xlsx");
 			try
@@ -118,7 +117,7 @@ public class FileHandling
 			}
 	}
 
-	public void textFileRename()
+	public static void textFileRename()
 	{
 		File f=new File("D:\\shrideev.txt");
 		File rename=new File ("D:\\Shrideev krishna.txt");
@@ -143,7 +142,7 @@ public class FileHandling
 		}
 	}
 	
-	public void foldersCreation()
+	public static void foldersCreation()
 	{
 		for (int num=1;num<=50;num++)
 		{
@@ -161,7 +160,7 @@ public class FileHandling
 		}
 	}
 
-	public void listAllItems()
+	public static void listAllItems()
 	{
 		File f=new File("D:\\");
 		boolean present=f.exists();
@@ -179,7 +178,7 @@ public class FileHandling
 		}
 	}
 
-	public void listTextFiles()
+	public static void listTextFiles()
 	{
 		File f=new File("D:\\");
 		boolean present=f.exists();
@@ -200,7 +199,7 @@ public class FileHandling
 		}
 	}
 	
-	public void listJsonFiles()
+	public static void listJsonFiles()
 	{
 		File f=new File("D:\\");
 		boolean present=f.exists();
@@ -221,7 +220,7 @@ public class FileHandling
 		}
 	}
 	
-	public void listXlsxFiles()
+	public static void listXlsxFiles()
 	{
 		File f=new File("D:\\");
 		boolean present=f.exists();
@@ -242,7 +241,7 @@ public class FileHandling
 		}
 	}
 
-	public void listFolders()
+	public static void listFolders()
 	{
 		File f=new File("D:\\My Documents");
 		File [] items=f.listFiles();//returns Full File objects with path info
@@ -258,7 +257,7 @@ public class FileHandling
 		}
 	}
 
-	public void textJsonFileRead(String p)
+	public static void textJsonFileRead(String p)
 	{
 		try
 		{
@@ -277,7 +276,7 @@ public class FileHandling
 		}
 	}
 
-	public void textJsonFileWrite(String p)
+	public static void textJsonFileWrite(String p)
 	{
 		try 
 		{
@@ -293,7 +292,7 @@ public class FileHandling
 		}
 	}
 
-	public void copyTextFromOtherFile(String source, String destiny)
+	public static void copyTextFromOtherFile(String source, String destiny)
 	{
 		try
 		{
@@ -315,7 +314,7 @@ public class FileHandling
 		}
 	}
 	
-	public void fileCopying()
+	public static void fileCopying()
 	{
 		Path source=Paths.get("D:\\My Documents\\Sriram Resume.pdf") ;
 		Path destination=Paths.get("D:\\Sriram Resume.pdf") ;
@@ -331,7 +330,7 @@ public class FileHandling
 		
 	}
 	
-	public void fileMoving()
+	public static void fileMoving()
 	{
 		Path source=Paths.get("D:\\My Documents\\Sriram Resume.pdf") ;
 		Path destination=Paths.get("D:\\Sriram Resume.pdf") ;
