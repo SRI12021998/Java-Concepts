@@ -17,6 +17,11 @@ public class Example
 		s2="df";
 		System.out.println(s2);
 		System.out.println(s2.hashCode());
+		
+		String st1 = "Java";
+		String st2 = "Javac";
+		System.out.println(st1.hashCode());
+		System.out.println(st2.hashCode());
 	}
 
 }
