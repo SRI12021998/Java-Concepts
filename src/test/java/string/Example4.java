@@ -21,7 +21,7 @@ public class Example4
 
         System.out.println(str1.lastIndexOf('o'));
 
-        System.out.println(str1.substring(0, 5));
+        System.out.println(str1.substring(0, 11));
 
         System.out.println(str1.replace('o', 'a'));
 
